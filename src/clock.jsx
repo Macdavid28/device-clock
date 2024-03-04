@@ -57,7 +57,7 @@ const Clock = () => {
           {monthName} / {theYear}
         </h1>
         <h1 className="time">
-          {time.hours} : {time.minutes} :- {time.seconds}
+          {time.hours} : {time.minutes} : {time.seconds}
         </h1>
       </div>
     </div>

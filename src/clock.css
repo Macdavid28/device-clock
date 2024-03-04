@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #000;
+}
+.clock {
+  margin-top: 200px;
+}
+.watch {
+  border: 2px solid blue;
+  border-radius: 20px;
+  border-width: 4px;
+  height: 200px;
+  width: 60%;
+  margin-left: 280px;
+  background-color: #fff;
+}
+h1 {
+  color: black;
+  font-family: "Orbitron", sans-serif;
+  text-align: left;
+  margin-left: 100px;
+  padding-top: 40px;
+}

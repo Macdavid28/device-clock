@@ -8,7 +8,8 @@ const Clock = () => {
     const hours = now.getHours() % 12 || 12;
     const minutes = now.getMinutes().toString().padStart(2, "0");
     const seconds = now.getSeconds().toString().padStart(2, "0");
-    return { hours, minutes, seconds };
+    const amOrPm = now.getHours() >= 12 ? "PM" : "AM";
+    return { hours, minutes, seconds, amOrPm };
   }
 
   const monthNames = [
@@ -57,7 +58,7 @@ const Clock = () => {
           {monthName} / {theYear}
         </h1>
         <h1 className="time">
-          {time.hours} : {time.minutes} : {time.seconds}
+          {time.hours} : {time.minutes} : {time.seconds} {time.amOrPm}
         </h1>
       </div>
     </div>
